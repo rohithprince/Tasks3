@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: monospace,monaco;
+            }
+            
+            
+            
+            
+            .form{
+                width:800px;
+                height:420px;
+                background:whitesmoke;
+                border-radius:18px;
+                box-shadow:0 0 40px -10px rgb(71, 117, 186);
+                margin:calc(50vh - 220px) auto;
+                padding:20px 30px;
+                max-width:calc(100vw - 40px);
+                box-sizing:border-box;
+                font-family:'Montserrat',sans-serif;
+                position:relative
+            }
+            h2{
+                margin:10px 0;
+                padding-bottom:10px;
+                width:180px;
+                color:DodgerBlue;
+                border-bottom:3px solid #00B4CC
+            }
+            .binput{
+                width:100%;
+                padding:10px;
+                box-sizing:border-box;
+                background:none;
+                outline:none;
+                resize:none;
+                border:0;
+                font-family:'Montserrat',sans-serif;
+                transition:all .3s;
+                border-bottom:2px solid DodgerBlue
+            }
+            .binput:focus{
+                border-bottom:2px solid #78788c
+            }
+            .label:before{
+                content:attr(type);
+                display:block;
+                margin:28px 0 0;
+                font-size:14px;
+                color:#5a5a5a
+            }
+            .bbutton{
+                float:left;
+                margin-top: 37px;
+                padding:12px 12px;
+                
+                font-family:'Montserrat',sans-serif;
+                border:2px solid DodgerBlue;
+                background:0;color:#5a5a6e;
+                
+                cursor:pointer;
+                transition:all .3s
+            }
+            .bbutton:hover{
+                border-radius: 13px;
+                background:DodgerBlue;
+                color:#fff
+            }
+            </style>
+    </head>
+
+<body>
+    <form action="#" method="post" class="form">
+        <h2>Update emp</h2>
+        <!-- <p class="label" type="Update:"><input type="text" class="binput" name="update" placeholder="id" required></input></p>-->
+         <p class="label" type="Update:"><input type="text" class="binput" name="up" placeholder="id" required></input></p>
+         <p class="label" type="Name:"><input type="text" class="binput" name="upname" placeholder="name" required></input></p>
+        <p class="label" type="Designation:"><input type="text" class="binput" name="updesig" placeholder="assistant manager" required></input></p>
+         <button class="bbutton" value="upload" name="submit" onclick="myFunction()">Submit</button> 
+         <button class="bbutton" value="upload" name="submit" onclick=window.location.href="http://127.0.0.1:5000/">Cancel</button>
+     </form>
+</body>
+</html>
